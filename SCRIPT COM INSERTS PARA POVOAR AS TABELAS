@@ -1,0 +1,13 @@
+INSERT INTO psicologa (nome, crp) VALUES
+('Dra. Ana Souza', '12345-PR'),
+('Dra. Beatriz Lima', '67890-PR');
+
+INSERT INTO paciente (nome, telefone, email) VALUES
+('João Pedro', '99999-1111', 'joao@gmail.com'),
+('Mariana Alves', '98888-2222', 'mariana@gmail.com'),
+('Carlos Mendes', '97777-3333', 'carlos@gmail.com');
+
+INSERT INTO consulta (id_psicologa, id_paciente, data, horario, valor) VALUES
+(1, 1, '2025-01-10', '14:00', 150.00),
+(1, 2, '2025-01-11', '15:00', 150.00),
+(2, 3, '2025-01-12', '16:30', 180.00);
