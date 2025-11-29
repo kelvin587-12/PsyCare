@@ -1,0 +1,8 @@
+-- 1. Deletar um paciente (se não tiver FK ativa)
+DELETE FROM paciente WHERE id_paciente = 3;
+
+-- 2. Apagar consultas de uma psicóloga
+DELETE FROM consulta WHERE id_psicologa = 2;
+
+-- 3. Excluir uma psicóloga (após apagar consultas dela)
+DELETE FROM psicologa WHERE id_psicologa = 2;
