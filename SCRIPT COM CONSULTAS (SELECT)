@@ -1,0 +1,20 @@
+-- 1. Selecionar todos os pacientes ordenados pelo nome
+SELECT * FROM paciente ORDER BY nome;
+
+-- 2. Consultas realizadas pela psicóloga Ana
+SELECT c.*, p.nome AS paciente
+FROM consulta c
+JOIN paciente p ON c.id_paciente = p.id_paciente
+WHERE id_psicologa = 1;
+
+-- 3. LIMIT para pegar apenas duas consultas
+SELECT * FROM consulta LIMIT 2;
+
+-- 4. Buscar pacientes que começam com a letra M
+SELECT * FROM paciente WHERE nome LIKE 'M%';
+
+-- 5. INNER JOIN completo
+SELECT c.id_consulta, ps.nome AS psicologa, p.nome AS paciente, c.data, c.horario
+FROM consulta c
+JOIN psicologa ps ON c.id_psicologa = ps.id_psicologa
+JOIN paciente p ON c.id_paciente = p.id_paciente;
