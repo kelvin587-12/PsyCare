@@ -1,0 +1,8 @@
+-- 1. Atualizar telefone do paciente
+UPDATE paciente SET telefone = '99999-0000' WHERE id_paciente = 1;
+
+-- 2. Alterar o valor de uma consulta
+UPDATE consulta SET valor = 200.00 WHERE id_consulta = 3;
+
+-- 3. Atualizar nome da psicóloga
+UPDATE psicologa SET nome = 'Dra. Ana Paula Souza' WHERE id_psicologa = 1;
